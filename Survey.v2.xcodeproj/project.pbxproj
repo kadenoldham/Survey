@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		25D813331F868DF100277F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D813321F868DF100277F25 /* AppDelegate.swift */; };
-		25D813351F868DF100277F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D813341F868DF100277F25 /* ViewController.swift */; };
 		25D813381F868DF100277F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D813361F868DF100277F25 /* Main.storyboard */; };
 		25D8133A1F868DF100277F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D813391F868DF100277F25 /* Assets.xcassets */; };
 		25D8133D1F868DF100277F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D8133B1F868DF100277F25 /* LaunchScreen.storyboard */; };
+		25D8134A1F8692FB00277F25 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D813491F8692FB00277F25 /* Survey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25D8132F1F868DF100277F25 /* Survey.v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Survey.v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D813321F868DF100277F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25D813341F868DF100277F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25D813371F868DF100277F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25D813391F868DF100277F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25D8133C1F868DF100277F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25D8133E1F868DF100277F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25D813491F8692FB00277F25 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,54 @@
 		25D813311F868DF100277F25 /* Survey.v2 */ = {
 			isa = PBXGroup;
 			children = (
-				25D813321F868DF100277F25 /* AppDelegate.swift */,
-				25D813341F868DF100277F25 /* ViewController.swift */,
-				25D813361F868DF100277F25 /* Main.storyboard */,
-				25D813391F868DF100277F25 /* Assets.xcassets */,
-				25D8133B1F868DF100277F25 /* LaunchScreen.storyboard */,
-				25D8133E1F868DF100277F25 /* Info.plist */,
+				25D813481F86928200277F25 /* ModelController */,
+				25D813471F86927900277F25 /* ViewController */,
+				25D813461F86927300277F25 /* Model */,
+				25D813451F86926900277F25 /* Resources */,
+				25D813441F86925400277F25 /* Storyboards */,
 			);
 			path = Survey.v2;
+			sourceTree = "<group>";
+		};
+		25D813441F86925400277F25 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				25D813361F868DF100277F25 /* Main.storyboard */,
+				25D8133B1F868DF100277F25 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		25D813451F86926900277F25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25D813321F868DF100277F25 /* AppDelegate.swift */,
+				25D813391F868DF100277F25 /* Assets.xcassets */,
+				25D8133E1F868DF100277F25 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		25D813461F86927300277F25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25D813491F8692FB00277F25 /* Survey.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25D813471F86927900277F25 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		25D813481F86928200277F25 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25D813351F868DF100277F25 /* ViewController.swift in Sources */,
 				25D813331F868DF100277F25 /* AppDelegate.swift in Sources */,
+				25D8134A1F8692FB00277F25 /* Survey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6E3GKZT85;
-				INFOPLIST_FILE = Survey.v2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Survey.v2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KadenOldham.Survey-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6E3GKZT85;
-				INFOPLIST_FILE = Survey.v2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Survey.v2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KadenOldham.Survey-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
