@@ -12,6 +12,7 @@
 		25D8133A1F868DF100277F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D813391F868DF100277F25 /* Assets.xcassets */; };
 		25D8133D1F868DF100277F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D8133B1F868DF100277F25 /* LaunchScreen.storyboard */; };
 		25D8134A1F8692FB00277F25 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D813491F8692FB00277F25 /* Survey.swift */; };
+		25D8134C1F869E4300277F25 /* EmojiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8134B1F869E4300277F25 /* EmojiController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		25D8133C1F868DF100277F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25D8133E1F868DF100277F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25D813491F8692FB00277F25 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		25D8134B1F869E4300277F25 /* EmojiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,8 @@
 		25D813311F868DF100277F25 /* Survey.v2 */ = {
 			isa = PBXGroup;
 			children = (
-				25D813481F86928200277F25 /* ModelController */,
 				25D813471F86927900277F25 /* ViewController */,
+				25D813481F86928200277F25 /* ModelController */,
 				25D813461F86927300277F25 /* Model */,
 				25D813451F86926900277F25 /* Resources */,
 				25D813441F86925400277F25 /* Storyboards */,
@@ -100,6 +102,7 @@
 		25D813481F86928200277F25 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				25D8134B1F869E4300277F25 /* EmojiController.swift */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				25D813331F868DF100277F25 /* AppDelegate.swift in Sources */,
 				25D8134A1F8692FB00277F25 /* Survey.swift in Sources */,
+				25D8134C1F869E4300277F25 /* EmojiController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
