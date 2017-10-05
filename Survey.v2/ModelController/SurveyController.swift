@@ -30,14 +30,15 @@ class SurveyController {
         guard let url = baseURL else { fatalError("BAD URL")}
         
         // Build the URL
-        let requestURL = url.appendingPathExtension("json")
+        let requestURL = url.appendingPathComponent(survey.identifier.uuidString).appendingPathExtension("json")
+        
         
         // Create the request
         var request = URLRequest(url: requestURL)
         request.httpMethod = "PUT"
         request.httpBody = survey.jsonData
         
-        URLSession.shared.dataTask(with: requestURL) { (data, _, error) in
+        URLSession.shared.dataTask(with: request) { (data, _, error) in
             
             var success = false
             
@@ -64,11 +65,11 @@ class SurveyController {
         
     }
     
-    func fetchEmoji(completion: @escaping ([Survey]?) -> Void) {
+    func fetchEmoji(completion: @escaping () -> Void) {
         
         guard let url = baseURL?.appendingPathExtension("json") else {
             print("Bad baseURL")
-            completion([])
+            completion()
             return
         }
         
@@ -76,22 +77,22 @@ class SurveyController {
             
             if let error = error {
                 print("Error fetching \(error.localizedDescription) \(#function) \(#file)")
-                completion([])
+                completion()
                 return
             }
             
-            guard let data = data else { print("No data returned from data task"); completion ([]); return}
+            guard let data = data else { print("No data returned from data task"); completion (); return}
             
             guard let surveyDictionaries = (try? JSONSerialization.jsonObject(with: data, options: []) as? [String: [String: String]]) else {
                 print(" Fetching from JSONObject")
-                completion([])
+                completion()
                 return
             }
             
             guard let surveys = surveyDictionaries?.flatMap({ Survey(dictionary: $0.value, identifier: $0.key)}) else { return }
             
             self.surveys = surveys
-            completion(surveys)
+            completion()
         }.resume()
         
         

@@ -12,7 +12,9 @@
 		25D8133A1F868DF100277F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D813391F868DF100277F25 /* Assets.xcassets */; };
 		25D8133D1F868DF100277F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D8133B1F868DF100277F25 /* LaunchScreen.storyboard */; };
 		25D8134A1F8692FB00277F25 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D813491F8692FB00277F25 /* Survey.swift */; };
-		25D8134C1F869E4300277F25 /* EmojiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8134B1F869E4300277F25 /* EmojiController.swift */; };
+		25D8134C1F869E4300277F25 /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8134B1F869E4300277F25 /* SurveyController.swift */; };
+		25D8134E1F86C0B800277F25 /* SurveyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8134D1F86C0B800277F25 /* SurveyListTableViewController.swift */; };
+		25D813501F86C11D00277F25 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D8134F1F86C11D00277F25 /* SurveyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		25D8133C1F868DF100277F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25D8133E1F868DF100277F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25D813491F8692FB00277F25 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
-		25D8134B1F869E4300277F25 /* EmojiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiController.swift; sourceTree = "<group>"; };
+		25D8134B1F869E4300277F25 /* SurveyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
+		25D8134D1F86C0B800277F25 /* SurveyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyListTableViewController.swift; sourceTree = "<group>"; };
+		25D8134F1F86C11D00277F25 /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		25D813471F86927900277F25 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				25D8134D1F86C0B800277F25 /* SurveyListTableViewController.swift */,
+				25D8134F1F86C11D00277F25 /* SurveyViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -102,7 +108,7 @@
 		25D813481F86928200277F25 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
-				25D8134B1F869E4300277F25 /* EmojiController.swift */,
+				25D8134B1F869E4300277F25 /* SurveyController.swift */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -181,7 +187,9 @@
 			files = (
 				25D813331F868DF100277F25 /* AppDelegate.swift in Sources */,
 				25D8134A1F8692FB00277F25 /* Survey.swift in Sources */,
-				25D8134C1F869E4300277F25 /* EmojiController.swift in Sources */,
+				25D8134C1F869E4300277F25 /* SurveyController.swift in Sources */,
+				25D8134E1F86C0B800277F25 /* SurveyListTableViewController.swift in Sources */,
+				25D813501F86C11D00277F25 /* SurveyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
